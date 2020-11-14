@@ -8,4 +8,6 @@ The challenges are probably a pretty basic level.
 
 I try to have a README in the individual challenges. 
 
-✅ XSS-bot
+## Challenges so far
+
+- ✅ XSS-bot
