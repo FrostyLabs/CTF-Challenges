@@ -1,0 +1,28 @@
+server {
+	listen 80 default_server;
+	
+	root /var/www/html/public;
+
+	index index.php index.html;
+
+	server_name localhost;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+        }
+
+	location /protect {	
+		auth_basic "Administrator Login";
+		auth_basic_user_file /var/www/html/.htpasswd;
+	}
+
+        location ~ /\.ht {
+                deny all;
+        }
+
+}
