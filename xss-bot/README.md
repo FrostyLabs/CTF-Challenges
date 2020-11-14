@@ -27,15 +27,15 @@ The "Your Entry" field allows for a long-ish comment to be added. Paste a payloa
 
 Front page
 
-![](images/1-landing.PNG)
+![](images/1-landing.png)
 
 Create entry page
 
-![](images/2-insert-payload.PNG)
+![](images/2-insert-payload.png)
 
 Get the flag
 
-![](images/3-get-flag.PNG)
+![](images/3-get-flag.png)
 
 ## Setup
 
